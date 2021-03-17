@@ -1,0 +1,48 @@
+﻿<Window x:Class="Lab_2_WPF.StartingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_2_WPF"
+        mc:Ignorable="d"
+        Title="Лабораторная работа №2|Выполнил: Скребнев Леонид ФИТУ 2-5б 020303-АИСа-о19" 
+        Height   ="345" Width   ="650"
+        MaxHeight="345" MaxWidth="650"
+        MinHeight="345" MinWidth="650">
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition />
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="UpLabel_1" 
+                   Grid.Column="1" 
+                   Grid.Row="0" 
+                   Grid.ColumnSpan="1" 
+                   TextAlignment="Center"
+                   TextBlock.FontSize="25"
+                   Text="Лабораторная работа №2"
+        />
+        <Button x:Name="btn_create" 
+                Grid.Column="1" 
+                Grid.Row="1"
+                Height="55" Click="btn_create_Click"
+            >Создать</Button>
+        <Button x:Name="btn_view"   
+                Grid.Column="1" 
+                Grid.Row="2"
+                Height="55" Click="btn_view_Click" 
+            >Отобразить</Button>
+        <Button x:Name="btn_exit"   
+                Grid.Column="1" 
+                Grid.Row="3"
+                Height="55" Click="btn_exit_Click" 
+            >Выход</Button>
+    </Grid>
+</Window>

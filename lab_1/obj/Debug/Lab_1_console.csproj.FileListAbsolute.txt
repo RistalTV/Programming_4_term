@@ -1,0 +1,10 @@
+C:\projects\Programming_4_term\lab_1\obj\Debug\Lab_1_console.csproj.CoreCompileInputs.cache
+C:\projects\Programming_4_term\lab_1\bin\Debug\lab_1.exe.config
+C:\projects\Programming_4_term\lab_1\bin\Debug\lab_1.exe
+C:\projects\Programming_4_term\lab_1\bin\Debug\lab_1.pdb
+C:\projects\Programming_4_term\lab_1\bin\Debug\Library.dll
+C:\projects\Programming_4_term\lab_1\bin\Debug\Library.pdb
+C:\projects\Programming_4_term\lab_1\obj\Debug\Lab_1_console.csprojAssemblyReference.cache
+C:\projects\Programming_4_term\lab_1\obj\Debug\Lab_1_console.csproj.CopyComplete
+C:\projects\Programming_4_term\lab_1\obj\Debug\lab_1.exe
+C:\projects\Programming_4_term\lab_1\obj\Debug\lab_1.pdb

@@ -1,0 +1,15 @@
+C:\projects\Programming_4_term\Lab_2_WPF\bin\Debug\Lab_2_WPF.exe.config
+C:\projects\Programming_4_term\Lab_2_WPF\bin\Debug\Lab_2_WPF.exe
+C:\projects\Programming_4_term\Lab_2_WPF\bin\Debug\Lab_2_WPF.pdb
+C:\projects\Programming_4_term\Lab_2_WPF\obj\Debug\Lab_2_WPF.csprojAssemblyReference.cache
+C:\projects\Programming_4_term\Lab_2_WPF\obj\Debug\App.g.cs
+C:\projects\Programming_4_term\Lab_2_WPF\obj\Debug\Lab_2_WPF_MarkupCompile.cache
+C:\projects\Programming_4_term\Lab_2_WPF\obj\Debug\Lab_2_WPF_MarkupCompile.lref
+C:\projects\Programming_4_term\Lab_2_WPF\obj\Debug\Lab_2_WPF.g.resources
+C:\projects\Programming_4_term\Lab_2_WPF\obj\Debug\Lab_2_WPF.Properties.Resources.resources
+C:\projects\Programming_4_term\Lab_2_WPF\obj\Debug\Lab_2_WPF.csproj.GenerateResource.cache
+C:\projects\Programming_4_term\Lab_2_WPF\obj\Debug\Lab_2_WPF.csproj.CoreCompileInputs.cache
+C:\projects\Programming_4_term\Lab_2_WPF\obj\Debug\Lab_2_WPF.exe
+C:\projects\Programming_4_term\Lab_2_WPF\obj\Debug\Lab_2_WPF.pdb
+C:\projects\Programming_4_term\Lab_2_WPF\obj\Debug\StartingWindow.g.cs
+C:\projects\Programming_4_term\Lab_2_WPF\obj\Debug\StartingWindow.baml

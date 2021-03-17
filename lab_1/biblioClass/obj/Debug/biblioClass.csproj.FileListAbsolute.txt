@@ -1,6 +1,0 @@
-C:\projects\Programming_4_term\lab_1\biblioClass\bin\Debug\biblioClass.dll
-C:\projects\Programming_4_term\lab_1\biblioClass\bin\Debug\biblioClass.pdb
-C:\projects\Programming_4_term\lab_1\biblioClass\obj\Debug\biblioClass.csprojAssemblyReference.cache
-C:\projects\Programming_4_term\lab_1\biblioClass\obj\Debug\biblioClass.csproj.CoreCompileInputs.cache
-C:\projects\Programming_4_term\lab_1\biblioClass\obj\Debug\biblioClass.dll
-C:\projects\Programming_4_term\lab_1\biblioClass\obj\Debug\biblioClass.pdb

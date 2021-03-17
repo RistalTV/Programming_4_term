@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{D630A8AA-1E87-4C1D-9EE1-BC995DCCC6B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_1_console", "lab_1\Lab_1_console.csproj", "{D2F4A648-8215-42C0-9E0C-ADC0F59E11AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_2_WPF", "Lab_2_WPF\Lab_2_WPF.csproj", "{E83AE68B-89E7-424A-BCFA-D046956BCE10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D630A8AA-1E87-4C1D-9EE1-BC995DCCC6B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D630A8AA-1E87-4C1D-9EE1-BC995DCCC6B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D630A8AA-1E87-4C1D-9EE1-BC995DCCC6B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D630A8AA-1E87-4C1D-9EE1-BC995DCCC6B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2F4A648-8215-42C0-9E0C-ADC0F59E11AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2F4A648-8215-42C0-9E0C-ADC0F59E11AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2F4A648-8215-42C0-9E0C-ADC0F59E11AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2F4A648-8215-42C0-9E0C-ADC0F59E11AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E83AE68B-89E7-424A-BCFA-D046956BCE10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E83AE68B-89E7-424A-BCFA-D046956BCE10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E83AE68B-89E7-424A-BCFA-D046956BCE10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E83AE68B-89E7-424A-BCFA-D046956BCE10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9325A00-60F8-4DE2-8810-3F90C1E16867}
+	EndGlobalSection
+EndGlobal
