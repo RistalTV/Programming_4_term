@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Class_union xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Tests>
+    <Class_test>
+      <Tasks>
+        <Class_Task>
+          <Text>No data</Text>
+          <Answer>No data</Answer>
+          <Number>1</Number>
+          <Answer_option>
+            <string />
+            <string />
+            <string />
+            <string />
+          </Answer_option>
+        </Class_Task>
+      </Tasks>
+      <Theme />
+    </Class_test>
+  </Tests>
+  <Final_exams />
+  <Exams />
+  <Trials />
+</Class_union>

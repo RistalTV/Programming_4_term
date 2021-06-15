@@ -8,3 +8,13 @@ C:\projects\Programming_4_term\lab_1\obj\Debug\Lab_1_console.csprojAssemblyRefer
 C:\projects\Programming_4_term\lab_1\obj\Debug\Lab_1_console.csproj.CopyComplete
 C:\projects\Programming_4_term\lab_1\obj\Debug\lab_1.exe
 C:\projects\Programming_4_term\lab_1\obj\Debug\lab_1.pdb
+D:\projects\Programming_4_term\lab_1\bin\Debug\lab_1.exe.config
+D:\projects\Programming_4_term\lab_1\bin\Debug\lab_1.exe
+D:\projects\Programming_4_term\lab_1\bin\Debug\lab_1.pdb
+D:\projects\Programming_4_term\lab_1\bin\Debug\Library.dll
+D:\projects\Programming_4_term\lab_1\bin\Debug\Library.pdb
+D:\projects\Programming_4_term\lab_1\obj\Debug\Lab_1_console.csprojAssemblyReference.cache
+D:\projects\Programming_4_term\lab_1\obj\Debug\Lab_1_console.csproj.CoreCompileInputs.cache
+D:\projects\Programming_4_term\lab_1\obj\Debug\Lab_1_console.csproj.CopyComplete
+D:\projects\Programming_4_term\lab_1\obj\Debug\lab_1.exe
+D:\projects\Programming_4_term\lab_1\obj\Debug\lab_1.pdb

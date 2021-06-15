@@ -5,29 +5,55 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Serialization;
+using System.Xml.Serialization;
 
 namespace Library
 {
-    public class Class_test
+    [Serializable]
+    [XmlInclude(typeof(Class_Academic_Subject))]
+    public class Class_test 
     {
         // Поля
         private string _theme;  // тема теста
         private List<Class_Task> _tasks = new List<Class_Task> { }; // задания
         private int _countTasks; // кол-во заданий
-        private List<string> _time = new List<string>(3) {"00","00","00" }; // вре мя выполнения задания
-        
+        private string[] _time = new string[]{"00","00","00" }; // время выполнения задания
+
+        // Конструкторы
+        public Class_test(string _theme, List<Class_Task> _tasks, List<string> _time)
+        {
+            this._time = new string[] { "00", "00", "00" };
+            this._theme = _theme;
+            this._tasks = _tasks;
+            if (_time.Count == 3)
+            {
+                this._time[0] = _time[0];
+                this._time[1] = _time[1];
+                this._time[2] = _time[2];
+            }
+
+        }
+        public Class_test() { }
+
         // Свойства
         public int CountTasks
         {
-            get { return _countTasks; }
+            get
+            {
+                UpdateClass();
+                return _countTasks;
+                
+            }
         }
         public List<Class_Task> Tasks 
         { 
-            get => _tasks; 
-            set => _tasks = value; 
+            get => _tasks;
+            set
+            {
+                _tasks = value;
+                UpdateClass();
+            }
         }
         public string Theme 
         { 
@@ -36,16 +62,35 @@ namespace Library
             {
                 if (string.IsNullOrEmpty(value))
                 {
+                    UpdateClass();
                     _theme = "No data";
                 }
                 else
                 {
+                    UpdateClass();
                     _theme = value;
                 }
             }
         }
 
+        public string Time { get => time; set => time = value; }
+        public string StrTask { get => strTask; set => strTask = value; }
+
+        private string strTask;
+        private string time;
         // Методы
+        public void UpdateClass()
+        {
+            Time = PrintTime();
+            strTask = PrintTask();
+        }
+        public void SetTime(List<string> _time)
+        {
+            this._time[0] = _time[0];
+            this._time[1] = _time[1];
+            this._time[2] = _time[2];
+            UpdateClass();
+        }
         public Class_Task GetTask(int num)
         {
             if (num > this.Tasks.Count || num < 0)
@@ -54,118 +99,21 @@ namespace Library
             foreach(var e in this.Tasks)
             {
                 if (e.Number == num)
+                {
+                    UpdateClass();
                     return e;
+                }
                 counter++;
             }
+            UpdateClass();
             return this.Tasks[0];
         }
-        public void AddTimeHours(int Hour)
+        public void SetTime(string h, string min, string sec)
         {
-            var hour_ = Convert.ToInt32(_time[0]);
-            Hour += hour_;
-            if (Hour <= 0)
-                _time[0] = "00";
-            else
-                _time[0] = Hour.ToString();
-        }
-        public void AddTimeMinutes(int Min)
-        {
-            var min_ = Convert.ToInt32(_time[1]);
-            Min += min_;
+            this._time[0] = h;
+            this._time[1] = min;
+            this._time[2] = sec;
 
-            while (Min > 59)
-            {
-                Min -= 60;
-                this.AddTimeHours(1);
-            }
-            if (Min <= 0)
-                _time[1] = "00";
-            else
-                _time[1] = Min.ToString();
-        }
-        public void AddTimeSeconds(int Sec)
-        {
-            var sec_ = Convert.ToInt32(_time[2]);
-            Sec += sec_;
-
-            while (Sec > 59)
-            {
-                Sec -= 60;
-                this.AddTimeMinutes(1);
-            }
-            if (Sec <= 0)
-                _time[2] = "0";
-            else
-                _time[2] = Sec.ToString();
-        }
-        public void SetTimeHours(int Hour)
-        {
-            if (Hour <= 0)
-                _time[0] = "00";
-            else
-                _time[0] = Hour.ToString();
-        }
-        public void SetTimeMinutes(int Min)
-        {
-            while (Min > 59)
-            {
-                Min -= 60;
-                this.AddTimeHours(1);
-            }
-            if (Min <= 0)
-                _time[1] = "00";
-            else
-                _time[1] = Min.ToString();
-        }
-        public void SetTimeSeconds(int Sec)
-        {
-            while (Sec > 59)
-            {
-                Sec -= 60;
-                this.AddTimeMinutes(1);
-            }
-            if (Sec <= 0)
-                _time[2] = "0";
-            else
-                _time[2] = Sec.ToString();
-        }
-        public void DelTimeHours(int Hour)
-        {
-            Hour = ((-1) * Hour) + Convert.ToInt32(_time[0]);
-            if (Hour <= 0)
-                _time[0] = "00";
-            else
-                _time[0] = Hour.ToString();
-        }
-        public void DelTimeMinutes(int Min)
-        {
-
-            Min = ((-1) * Min) + Convert.ToInt32(_time[1]) + Convert.ToInt32(_time[0])*60;
-            this.DelTimeHours(Convert.ToInt32(_time[0]));
-            while (Min > 59)
-            {
-                Min -= 60;
-                this.AddTimeHours(1);
-            }
-            if (Min <= 0)
-                _time[1] = "00";
-            else
-                _time[1] = Min.ToString();
-        }
-        public void DelTimeSeconds(int Sec)
-        {
-            Sec = ((-1) * Sec) + Convert.ToInt32(_time[2]) + Convert.ToInt32(_time[1]) * 60 + Convert.ToInt32(_time[0]) * 3600;
-            this.DelTimeHours(Convert.ToInt32(_time[0]));
-            this.DelTimeHours(Convert.ToInt32(_time[1]));
-            while (Sec > 59)
-            {
-                Sec -= 60;
-                this.AddTimeMinutes(1);
-            }
-            if (Sec <= 0)
-                _time[2] = "0";
-            else
-                _time[2] = Sec.ToString();
         }
         public void AddTask(string _text, List<string> _answer_option, string _answer)
         {
@@ -185,6 +133,7 @@ namespace Library
             T.Number = this.Tasks.Count + 1;
             this.Tasks.Add(T);
             this._countTasks = this.Tasks.Count;
+            UpdateClass();
         }
         public void DelTasks()
         {
@@ -207,7 +156,6 @@ namespace Library
                 counter++;
             }
         }
-
         public string ToPrintTheme()
         {
             return $"Тема:'{this._theme}'. \n";
@@ -237,5 +185,30 @@ namespace Library
                 }
             return text;
         }
+        public string PrintTask()
+        {
+            var text="";
+            if (Tasks.Count != 0)
+                foreach (var e in Tasks)
+                {
+                    text += $"['{e.Text}'";
+                    foreach (var a in e.Answer_option)
+                    {
+                        text += $", ({a})";
+                    }
+                    text += "], ";
+                }
+            else
+                text = "No Tasks";
+            return text;
+        }
+        public string PrintTime()
+        {
+            return 
+                $"{((this._time.ElementAt(0) == "00") ? "0 ч. " : this._time.ElementAt(0) + " ч. ")}" +
+                $"{((this._time.ElementAt(1) == "00") ? "0 мин." : this._time.ElementAt(1) + " мин.")}" +
+                $"{((this._time.ElementAt(2) == "00") ? "0 сек." : this._time.ElementAt(2) + " сек.")}";
+        }
+
     }
 }

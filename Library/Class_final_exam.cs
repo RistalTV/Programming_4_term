@@ -8,9 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Schema;
+using System.Xml.Serialization;
 
 namespace Library
 {
+    [Serializable]
+
     public class Class_final_exam: Class_exam
     {
         // Поля
